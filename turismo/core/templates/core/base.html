@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="turismo eco" content="Tursimo Eco Friendly">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Turismo Sostenible - {% block title %} {% endblock %}</title>
+        {% load static %}
+        <link rel="icon" type="Img/icon" sizes="16x16" href=" {% static 'img/imagenp.png' %}">
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" >
+    </head>
+
+    <body>
+        <header>    
+            <nav>
+                <div class= "topnav">
+                    <ul>
+                        <li><a href="{% url 'destinos' %}">Destinos</a></li>
+                        <li><a href="{% url 'practicas' %}">Practicas</a></li>
+                        <li><a href="{% url 'guias' %}">Guias</a></li>
+                        <li><a href="{% url 'conoce' %}">Conoce</a></li>
+                        <li><a href="{% url 'aprende' %}">Aprende</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+
+
+
+
+        
+        <div class="container1">
+            {% block content %}{% endblock%}
+        </div>
+    </body>
+
+        <!-- {% if request.path != "/" %} <hr> {% endif %} -->
+            
+</html>
+        

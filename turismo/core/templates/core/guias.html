@@ -1,0 +1,44 @@
+{% extends "core/base.html" %}
+{% block title %} Guias {% endblock %}
+
+
+{% block content %} 
+{% load static %}
+<center><h1>Mejores Empresas Guías Turísticas Ecológicas de Ecuador</h1></center>
+<div class="container">
+    <div class="card">
+        <img src="{% static 'img/g1.jpg' %}" width="200px">
+        <h4>Yacuma EcoLodge</h4>
+        <p style="text-align:justify;">
+        Esta empresa se encuentra en la selva amazónica de Ecuador y ofrece una experiencia única para los viajeros que buscan una inmersión total en la naturaleza. El alojamiento está construido con materiales sostenibles y la empresa se enfoca en la conservación de la biodiversidad local.
+        </p>
+        <a href="https://yacuma.travel/es/inicio/" target="_blank">Saber Más...</a>
+    </div>
+    <div class="card">
+        <img src="{% static 'img/g2.jpg' %}" width="200px">
+        <h4>Galapagos Safari Camp</h4>
+        <p style="text-align:justify;">
+        Ubicado en las Islas Galápagos, este campamento ofrece un alojamiento de lujo en medio de la naturaleza. La empresa se enfoca en la conservación de la flora y fauna local y ofrece una experiencia única para los viajeros que buscan un turismo responsable.        
+        </p>
+        <a href="https://www.galapagossafaricamp.com/" target="_blank">Saber Más...</a>
+    </div>
+    <div class="card">
+        <img src="{% static 'img/g3.png' %}" width="200px">
+        <h4>Chimborazo Lodge</h4>
+        <p style="text-align:justify;">
+        Esta empresa se encuentra en la Reserva de Producción de Fauna Chimborazo y ofrece alojamiento sostenible en medio de la naturaleza. La empresa se enfoca en la educación ambiental y la conservación de la biodiversidad local.
+        </p>
+        <a href="https://chimborazolodge.com/es/" target="_blank">Saber Más...</a>
+    </div>
+    <div class="card">
+        <img src="{% static 'img/g4.jpg' %}" width="200px">
+        <h4>Sani Lodge</h4>
+        <p style="text-align:justify;">
+        Esta empresa se encuentra en la selva amazónica de Ecuador y ofrece alojamiento sostenible y actividades turísticas amigables con el medio ambiente. La empresa se enfoca en la conservación de la biodiversidad local y en la educación ambiental.
+        </p>
+        <a href="https://www.sanilodge.com/" target="_blank">Saber Más...</a>
+    </div>
+</div>
+
+{% endblock %} 
+

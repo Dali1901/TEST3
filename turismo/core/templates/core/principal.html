@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="turismo eco" content="Tursimo Eco Friendly">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Turismo Sostenible</title>
+        {% load static %}
+        <link rel="icon" type="Img/icon" sizes="16x16" href=" {% static 'img/imagenp.png' %}">
+        <link href="{% static 'css/prin.css' %}" rel="stylesheet" >
+    </head>
+
+    <body>
+        <center><img class="imgp" src="{% static 'img/imagenp.png' %}"></img></center>
+        <center><a class="imgi" href="{% url 'destinos' %}">Turismo Sostenible</a></center>
+    </body>
+</html>

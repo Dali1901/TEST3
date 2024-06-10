@@ -1,0 +1,19 @@
+{% extends "core/base.html" %}
+{% block title %} Aprende {% endblock %}
+
+{% block content %} 
+{% load static %}
+<center><h1>Entérate de la últimas noticias del Turismo EcoAmigable</h1></center>
+    {% for informes in informes %}
+        <div>
+            <div>
+                <img  width="400px" class="img-fluid" src="{{informes.imagen.url}}"></img>
+            </div>
+            <div>
+                <h2>{{informes.titulo}}</h2>
+                <p>{{informes.descripcion}}</p>
+            </div>
+        </div>
+
+    {% endfor %}
+{% endblock %} 
